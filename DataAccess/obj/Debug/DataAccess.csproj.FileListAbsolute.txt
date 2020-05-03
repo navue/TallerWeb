@@ -1,0 +1,9 @@
+C:\Users\nicol\source\repos\TallerWeb\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\nicol\source\repos\TallerWeb\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\nicol\source\repos\TallerWeb\DataAccess\bin\Debug\Domain.dll
+C:\Users\nicol\source\repos\TallerWeb\DataAccess\bin\Debug\Domain.pdb
+C:\Users\nicol\source\repos\TallerWeb\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\Users\nicol\source\repos\TallerWeb\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\nicol\source\repos\TallerWeb\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\nicol\source\repos\TallerWeb\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\nicol\source\repos\TallerWeb\DataAccess\obj\Debug\DataAccess.pdb

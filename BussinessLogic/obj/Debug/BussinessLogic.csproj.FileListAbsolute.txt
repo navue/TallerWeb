@@ -1,0 +1,11 @@
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\bin\Debug\BussinessLogic.dll
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\bin\Debug\BussinessLogic.pdb
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\bin\Debug\DataAccess.dll
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\bin\Debug\Domain.dll
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\bin\Debug\DataAccess.pdb
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\bin\Debug\Domain.pdb
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\obj\Debug\BussinessLogic.csprojAssemblyReference.cache
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\obj\Debug\BussinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\obj\Debug\BussinessLogic.csproj.CopyComplete
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\obj\Debug\BussinessLogic.dll
+C:\Users\nicol\source\repos\TallerWeb\BussinessLogic\obj\Debug\BussinessLogic.pdb
