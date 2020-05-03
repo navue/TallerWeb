@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DataAccess;
 using Domain;
 
-namespace BussinessLogic
+namespace BusinessLogic
 {
     public static class ClientesManager
     {

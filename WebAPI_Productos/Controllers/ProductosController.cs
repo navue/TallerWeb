@@ -10,7 +10,7 @@ using Domain;
 
 namespace WebAPIClientes
 {
-    [EnableCors(origins: "https://localhost:44321", headers: "*", methods: "*")]
+    [EnableCors(origins: "https://localhost:44386", headers: "*", methods: "*")]
     public class ProductosController : ApiController
     {
         // GET api/<controller>

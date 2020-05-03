@@ -68,8 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css" />
-    <Content Include="index.html" />
-    <Content Include="js\main.js" />
+    <Content Include="clientes.html" />
+    <Content Include="js\clientes.js" />
+    <Content Include="js\productos.js" />
     <Content Include="productos.html" />
     <Content Include="Web.config" />
   </ItemGroup>

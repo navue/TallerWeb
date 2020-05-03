@@ -4,11 +4,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using BussinessLogic;
+using System.Web.Http.Cors;
+using BusinessLogic;
 using Domain;
 
 namespace WebAPIClientes.Controllers
 {
+    [EnableCors(origins: "https://localhost:44386", headers: "*", methods: "*")]
     public class ClientesController : ApiController
     {
         // GET api/<controller>

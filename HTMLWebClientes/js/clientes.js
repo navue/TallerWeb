@@ -1,4 +1,4 @@
-﻿var myURL = "https://localhost:44351//api/clientes";
+﻿var myURL = "https://localhost:44351/api/clientes";
 sessionStorage.setItem("IDClientes", 0);
 
 $(function () {
@@ -6,7 +6,7 @@ $(function () {
     $('#btnGuardar').click(function () { guardarCliente(); });
     $('#btnEliminar').click(function () { borrarCliente(); });
     $('#btnCancelar').click(function () { limpiarControles(); });
-    $('#btnGuardar').val("Nuevo");
+    $('#btnGuardar').html("Nuevo");
 
 });
 
@@ -41,8 +41,7 @@ function ajaxPOST() {
         url: myURL,
         type: 'POST',
         async: false,
-        data: {
-            "Id": obj.Id, "Nombre": obj.Nombre, "Apellido": obj.Apellido, "Fecha_Nac": obj.Fecha_Nac, "Nro_Doc": obj.Nro_Doc, "Direccion": obj.Direccion }
+        data: obj
     }).done(function (data) {
         result = data;
         alert('Elemento insertado')
@@ -80,7 +79,7 @@ function ajaxDELETE(id) {
     var result;
 
     $.ajax({
-        url: myURL + id,
+        url: myURL + '/' + id,
         type: 'DELETE',
         async: false
     }).done(function (data) {
@@ -128,15 +127,17 @@ function construyeGrilla(data) {
 }
 
 function borrarCliente() {
-    var id = $('#txtID').val();
-    ajaxDELETE(id);
+    if (sessionStorage.getItem("IDCliente") != 0) {
+        ajaxDELETE(sessionStorage.getItem("IDCliente"));
+    } else {
+        alert("No hay ningún registro seleccionado");
+    }
     actualizarGrilla();
     limpiarControles();
 }
 
 function guardarCliente() {
-    var id = $('#txtID').val();
-    if (id == 0) {
+    if (sessionStorage.getItem("IDCliente") == 0) {
         ajaxPOST();
     }
     else {
@@ -147,19 +148,19 @@ function guardarCliente() {
 }
 
 function mostrarElemento(elem) {
-    $('#txtID').val(elem.children().eq(0).text());
+    sessionStorage.setItem("IDCliente", elem.children().eq(0).text());
     $('#txtNombre').val(elem.children().eq(1).text());
     $('#txtApellido').val(elem.children().eq(2).text());
     $('#txtFecha').val(elem.children().eq(3).text());
     $('#txtDocumento').val(elem.children().eq(4).text());
     $('#txtDireccion').val(elem.children().eq(5).text());
 
-    $('#btnGuardar').val("Modificar");
+    $('#btnGuardar').html("Modificar");
 }
 
 function obtenerCliente() {
     var cliente = {};
-    cliente.Id = $('#txtID').val();
+    cliente.Id = sessionStorage.getItem("IDCliente");
     cliente.Nombre = $('#txtNombre').val();
     cliente.Apellido = $('#txtApellido').val();
     cliente.Fecha_Nac = $('#txtFecha').val();
@@ -169,12 +170,12 @@ function obtenerCliente() {
     return cliente;
 }
 function limpiarControles() {
-    $('#txtID').val(0);
+    sessionStorage.setItem("IDProducto", 0);
     $('#txtNombre').val("");
     $('#txtApellido').val("");
     $('#txtFecha').val("");
     $('txtDocumento').val("");
     $('#txtDireccion').val("");
 
-    $('#btnGuardar').val("Nuevo");
+    $('#btnGuardar').html("Nuevo");
 }
