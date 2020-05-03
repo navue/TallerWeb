@@ -24,6 +24,7 @@ function ajaxGET() {
         result = data;
         console.log(result);
     }).error(function (xhr, status, error) {
+        alert("Error en el GET");
         alert(error);
         var s = status;
         var e = error;

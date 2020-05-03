@@ -52,8 +52,8 @@ C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\bin\roslyn\VBCSCompil
 C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\obj\Debug\HTMLWebApp.csprojAssemblyReference.cache
 C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\obj\Debug\HTMLWebApp.csproj.CoreCompileInputs.cache
 C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\obj\Debug\HTMLWebApp.csproj.CopyComplete
 C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\obj\Debug\HTMLWebClientes.dll
 C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\obj\Debug\HTMLWebClientes.pdb
+C:\Users\CASA\Source\Repos\navue\TallerWeb\HTMLWebClientes\obj\Debug\HTMLWebApp.csprojAssemblyReference.cache

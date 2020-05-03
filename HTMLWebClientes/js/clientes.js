@@ -1,5 +1,5 @@
 ﻿var myURL = "https://localhost:44351/api/clientes";
-sessionStorage.setItem("IDClientes", 0);
+sessionStorage.setItem("IDCliente", 0);
 
 $(function () {
     actualizarGrilla();
@@ -111,7 +111,7 @@ function construyeGrilla(data) {
 
     for (d in data) {
         var row = $('<tr class="jqClickeable"></tr>');
-        row.append('<td>' + data[d].Id + '</td>');
+        row.append('<td>' + data[d].ID + '</td>');
         row.append('<td>' + data[d].Nombre + '</td>');
         row.append('<td>' + data[d].Apellido + '</td>');
         row.append('<td>' + data[d].Fecha_Nac + '</td>');
@@ -170,7 +170,7 @@ function obtenerCliente() {
     return cliente;
 }
 function limpiarControles() {
-    sessionStorage.setItem("IDProducto", 0);
+    sessionStorage.setItem("IDCliente", 0);
     $('#txtNombre').val("");
     $('#txtApellido').val("");
     $('#txtFecha').val("");

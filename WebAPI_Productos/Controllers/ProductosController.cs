@@ -22,6 +22,7 @@ namespace WebAPIClientes
         // POST api/<controller>
         public void Post([FromBody]Producto producto)
         {
+            //Para revertir que ajax transforma "" en null
             if(producto.Nombre == null)
             {
                 producto.Nombre = "";
@@ -36,6 +37,14 @@ namespace WebAPIClientes
         // PUT api/<controller>/5
         public void Put([FromBody]Producto producto)
         {
+            if (producto.Nombre == null)
+            {
+                producto.Nombre = "";
+            }
+            if (producto.Descripcion == null)
+            {
+                producto.Descripcion = "";
+            }
             ProductosManager.Guardar(producto);
         }
 

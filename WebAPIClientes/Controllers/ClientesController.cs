@@ -8,7 +8,7 @@ using System.Web.Http.Cors;
 using BusinessLogic;
 using Domain;
 
-namespace WebAPIClientes.Controllers
+namespace WebAPIClientes
 {
     [EnableCors(origins: "https://localhost:44386", headers: "*", methods: "*")]
     public class ClientesController : ApiController
@@ -22,12 +22,26 @@ namespace WebAPIClientes.Controllers
         // POST api/<controller>
         public void Post([FromBody]Cliente cliente)
         {
+            //Para revertir que ajax transforma "" en null
+            if (cliente.Nombre == null) {cliente.Nombre = "";}
+            if (cliente.Apellido == null){cliente.Apellido = "";}
+            if (cliente.Nro_Doc == null){ cliente.Nro_Doc = "";}
+            if (cliente.Fecha_Nac == null){ cliente.Fecha_Nac = "";}
+            if (cliente.Direccion == null){ cliente.Direccion = "";}
+
             ClientesManager.Guardar(cliente);
         }
 
         // PUT api/<controller>/5
         public void Put([FromBody]Cliente cliente)
         {
+            //Para revertir que ajax transforma "" en null
+            if (cliente.Nombre == null) { cliente.Nombre = ""; }
+            if (cliente.Apellido == null) { cliente.Apellido = ""; }
+            if (cliente.Nro_Doc == null) { cliente.Nro_Doc = ""; }
+            if (cliente.Fecha_Nac == null) { cliente.Fecha_Nac = ""; }
+            if (cliente.Direccion == null) { cliente.Direccion = ""; }
+
             ClientesManager.Guardar(cliente);
         }
 
