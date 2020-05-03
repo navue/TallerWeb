@@ -107,9 +107,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BussinessLogic\BussinessLogic.csproj">
+    <ProjectReference Include="..\BussinessLogic\BusinessLogic.csproj">
       <Project>{928f38d3-56f0-46bd-afec-c582eb520458}</Project>
-      <Name>BussinessLogic</Name>
+      <Name>BusinessLogic</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{211f157e-b01a-4f17-a3d3-051070b23bf2}</Project>
