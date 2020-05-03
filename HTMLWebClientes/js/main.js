@@ -100,7 +100,6 @@ function construyeGrilla(data) {
     grd.html("");
     var tbl = $('<table border=1></table>');
 
-
     var header = $('<tr></tr>');
     header.append('<td>Id</td>');
     header.append('<td>Nombre</td>');
@@ -110,7 +109,6 @@ function construyeGrilla(data) {
     header.append('<td>Direccion</td>');
 
     tbl.append(header);
-
 
     for (d in data) {
         var row = $('<tr class="jqClickeable"></tr>');
@@ -179,5 +177,4 @@ function limpiarControles() {
     $('#txtDireccion').val("");
 
     $('#btnGuardar').val("Nuevo");
-
 }
